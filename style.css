@@ -1,0 +1,52 @@
+#google-logo {
+    display: block;
+    height: auto;
+    margin: auto auto 100px;
+}
+
+.vw-one {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.searchbar {
+    display: flex;
+    height: 44px;
+    width: auto;
+    max-width: 584px;
+    border-radius: 22px;
+    border: 1px solid #dfe1e5;
+    
+}
+
+.searchbar:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.search {
+    display: flex;
+    flex: 1;
+    padding: 10px 8px 10px 14px;
+    min-width: 0;
+    
+}
+
+.search-icon {
+    width: auto;
+    padding-right: 6px;
+}
+
+.search-input {
+    display: flex;
+    flex: 1;
+    border: 0px solid transparent;
+
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+
