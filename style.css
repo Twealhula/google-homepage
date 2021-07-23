@@ -1,12 +1,102 @@
-#google-logo {
-    display: block;
-    height: auto;
-    margin: auto auto 100px;
+.body {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #222;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-.vw-one {
+.fc-main {
     display: flex;
-    width: 100vw;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.fc-one {
+    display: flex;
+    padding: 6px;
+    height: 60px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.about {
+    padding: 5px;
+    margin: 0 5px 0 15px;
+}
+
+.store {
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.about, .store, .gmail, .images{
+    color: #222;
+    text-decoration: none;
+}
+
+.about:hover, .store:hover, .gmail:hover, .images:hover{
+    text-decoration: underline;
+}
+
+.fc-one-right {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.gmail, .images {
+    padding-right: 15px;
+}
+
+.google-apps1 {
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+}
+
+.google-apps1:hover {
+    border-radius: 50%;
+    background-color: rgba(60,64,67,0.08);
+}
+
+.google-apps2 {
+    fill: #5f6368;
+    padding: 8px;
+}
+
+.github-profile {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 12px 0 12px;
+}
+
+.profile-img {
+    height: 32px;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.fc-two {
+    display: flex;
+    min-height: 150px;
+    max-height: 290px;
+    flex-shrink: 0;
+    height: calc(100% - 560px)
+}
+
+.google-logo {
+    margin: auto auto 0 auto;
+    padding-bottom: 15px;
+}
+
+.fc-three {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    max-height: 160px;
     justify-content: center;
 }
 
@@ -15,6 +105,7 @@
     height: 44px;
     width: auto;
     max-width: 584px;
+    min-width: 0;
     border-radius: 22px;
     border: 1px solid #dfe1e5;
     
@@ -39,7 +130,6 @@
 }
 
 .search-input {
-    display: flex;
     flex: 1;
     border: 0px solid transparent;
 
@@ -49,4 +139,8 @@
     outline: none;
 }
 
+.fc-footer {
+    display: flex;
+
+}
 
