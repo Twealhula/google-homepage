@@ -7,13 +7,13 @@
     margin: 0;
 }
 
-.fc-main {
+.main {
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
-.fc-one {
+.top-navigation {
     display: flex;
     padding: 6px;
     height: 60px;
@@ -31,16 +31,16 @@
     margin: 0 5px;
 }
 
-.about, .store, .gmail, .images{
+.nav-format{
     color: #222;
     text-decoration: none;
 }
 
-.about:hover, .store:hover, .gmail:hover, .images:hover{
+.link:hover{
     text-decoration: underline;
 }
 
-.fc-one-right {
+.top-navigation-right {
     display: flex;
     margin-left: auto;
     align-items: center;
@@ -56,7 +56,7 @@
     box-sizing: border-box;
 }
 
-.google-apps1:hover {
+.google-apps1:hover, .github-profile:hover{
     border-radius: 50%;
     background-color: rgba(60,64,67,0.08);
 }
@@ -69,7 +69,8 @@
 .github-profile {
     display: flex;
     box-sizing: border-box;
-    padding: 0 12px 0 12px;
+    padding: 4px;
+    margin: 0 8px;
 }
 
 .profile-img {
@@ -79,7 +80,7 @@
     border-radius: 50%;
 }
 
-.fc-two {
+.logo-flexbox {
     display: flex;
     min-height: 150px;
     max-height: 290px;
@@ -92,11 +93,11 @@
     padding-bottom: 15px;
 }
 
-.fc-three {
+.searchbar-flexbox {
     display: flex;
-    flex: 1;
     padding: 20px;
     max-height: 160px;
+    box-sizing: border-box;
     justify-content: center;
 }
 
@@ -106,6 +107,7 @@
     width: auto;
     max-width: 584px;
     min-width: 0;
+    margin: 6px auto 0;
     border-radius: 22px;
     border: 1px solid #dfe1e5;
     
@@ -139,8 +141,111 @@
     outline: none;
 }
 
-.fc-footer {
+.buttons-flexbox {
     display: flex;
 
 }
 
+.buttons {
+    display: flex;
+    height: 70px;
+    padding-top: 10px;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.google-search, .im-feeling-lucky {
+    border: 1px solid #f8f9fa;
+    height: 36px;
+    min-width: 54px;
+    padding: 0 16px;
+    margin: 0 5px 2px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    font: inherit;
+    color: #202124;
+    cursor: pointer;
+
+}
+
+.google-search:hover, .im-feeling-lucky:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+} 
+
+.bot-nav-format {
+    color: #70757a;
+    text-decoration: none;
+}
+
+.bot-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    align-items: center;
+    padding: 0 20px;
+    background: #f2f2f2;
+    border-top: 1px solid #dadce0;
+}
+
+.bot-navigation-left {
+    display: flex;
+    height: 44px;
+}
+
+.how-search-works {
+    text-align: center;
+}
+
+.advertising, .business, .how-search-works {
+    padding: 15px;
+
+}
+
+.bot-navigation-middle {
+    display: flex;
+    height: 44px;
+    align-items: center;
+}
+
+.leaf-icon {
+    height: 14px;
+    margin-right: 2px;
+}
+
+.carbon-neutral {
+
+}
+
+.bot-navigation-right {
+    display: flex;
+    height: 44px;
+}
+
+.privacy, .terms, .settings {
+    padding: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .bot-navigation {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .bot-navigation-middle {
+        order: 1;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .bot-navigation-left {
+        order: 2;
+        padding: 0 40px;
+    }
+
+    .bot-navigation-right {
+        order: 3;
+        padding: 0 40px;
+    }
+
+}
